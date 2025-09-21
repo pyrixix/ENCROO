@@ -1,0 +1,200 @@
+{
+  "missions": [
+    {
+      "id": 1,
+      "title": "Bottle Rescue",
+      "description": "Collect and recycle 5 plastic bottles instead of throwing them away.",
+      "points": 20,
+      "category": "waste"
+    },
+    {
+      "id": 2,
+      "title": "Power Down",
+      "description": "Turn off lights and electronics when not in use for one whole day.",
+      "points": 30,
+      "category": "energy"
+    },
+    {
+      "id": 3,
+      "title": "Water Saver",
+      "description": "Take a 5-minute shower instead of a long bath.",
+      "points": 25,
+      "category": "water"
+    },
+    {
+      "id": 4,
+      "title": "Tree Guardian",
+      "description": "Plant one tree or help water plants around your home.",
+      "points": 50,
+      "category": "biodiversity"
+    },
+    {
+      "id": 5,
+      "title": "Trash Sorter",
+      "description": "Separate your household waste into recyclable and non-recyclable.",
+      "points": 40,
+      "category": "waste"
+    },
+    {
+      "id": 6,
+      "title": "Meat-Free Monday",
+      "description": "Eat vegetarian food for one entire day.",
+      "points": 35,
+      "category": "lifestyle"
+    },
+    {
+      "id": 7,
+      "title": "Eco Commute",
+      "description": "Walk, cycle, or use public transport instead of a private car.",
+      "points": 45,
+      "category": "energy"
+    },
+    {
+      "id": 8,
+      "title": "Wildlife Watcher",
+      "description": "Spot and log 3 local birds or insects in your area.",
+      "points": 30,
+      "category": "biodiversity"
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "name": "Aarav Singh",
+      "role": "student",
+      "avatar_level": 1,
+      "points": 0
+    },
+    {
+      "id": 2,
+      "name": "Meera Kapoor",
+      "role": "student",
+      "avatar_level": 2,
+      "points": 50
+    },
+    {
+      "id": 3,
+      "name": "Kabir Iyer",
+      "role": "student",
+      "avatar_level": 1,
+      "points": 20
+    },
+    {
+      "id": 4,
+      "name": "Sara Deshmukh",
+      "role": "student",
+      "avatar_level": 3,
+      "points": 90
+    },
+    {
+      "id": 5,
+      "name": "Rohan Patel",
+      "role": "student",
+      "avatar_level": 1,
+      "points": 10
+    },
+    {
+      "id": 6,
+      "name": "Ishita Das",
+      "role": "student",
+      "avatar_level": 2,
+      "points": 70
+    },
+    {
+      "id": 7,
+      "name": "Mr. Verma",
+      "role": "teacher",
+      "avatar_level": 3,
+      "points": 0
+    },
+    {
+      "id": 8,
+      "name": "Ms. Nair",
+      "role": "teacher",
+      "avatar_level": 2,
+      "points": 0
+    }
+  ],
+  "submissions": [
+    {
+      "id": 1,
+      "user_id": 2,
+      "mission_id": 1,
+      "proof_file": "/uploads/meera_bottles.jpg",
+      "status": "approved"
+    },
+    {
+      "id": 2,
+      "user_id": 4,
+      "mission_id": 3,
+      "proof_file": "/uploads/sara_shower.png",
+      "status": "approved"
+    },
+    {
+      "id": 3,
+      "user_id": 6,
+      "mission_id": 6,
+      "proof_file": "/uploads/ishita_meatfree.jpg",
+      "status": "pending"
+    },
+    {
+      "id": 4,
+      "user_id": 3,
+      "mission_id": 2,
+      "proof_file": "/uploads/kabir_poweroff.png",
+      "status": "rejected"
+    },
+    {
+      "id": 5,
+      "user_id": 5,
+      "mission_id": 5,
+      "proof_file": "/uploads/rohan_trashsort.jpg",
+      "status": "approved"
+    }
+  ],
+  "leaderboard": [
+    {
+      "rank": 1,
+      "name": "Sara Deshmukh",
+      "points": 90
+    },
+    {
+      "rank": 2,
+      "name": "Ishita Das",
+      "points": 70
+    },
+    {
+      "rank": 3,
+      "name": "Meera Kapoor",
+      "points": 50
+    }
+  ],
+  "ecosystem_stages": [
+    {
+      "stage": 1,
+      "description": "A barren patch of land with a few small plants beginning to sprout."
+    },
+    {
+      "stage": 2,
+      "description": "Growing greenery with small trees and a cleaner riverbank."
+    },
+    {
+      "stage": 3,
+      "description": "A thriving ecosystem with tall trees, a clear river, and visible birds/wildlife."
+    }
+  ],
+  "impact_examples": [
+    {
+      "user_id": 2,
+      "mission_id": 1,
+      "points_earned": 20,
+      "badges_unlocked": ["Waste Warrior"]
+    },
+    {
+      "user_id": 4,
+      "mission_id": 3,
+      "points_earned": 25,
+      "badges_unlocked": ["Water Saver"]
+    }
+  ]
+}
