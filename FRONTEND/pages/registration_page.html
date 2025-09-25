@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Join NEXTURE - Registration</title>
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<script type="module" src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Fnexture2966back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.8"></script>
+</head>
+<body class="bg-gradient-ecosystem font-inter min-h-screen">
+    <!-- Registration Header -->
+    <header class="bg-surface/90 backdrop-blur-sm border-b border-border sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <svg class="w-8 h-8 text-primary mr-3" viewBox="0 0 32 32" fill="currentColor">
+                        <path d="M16 2L20 10H28L22 16L24 24L16 20L8 24L10 16L4 10H12L16 2Z"/>
+                        <circle cx="16" cy="16" r="3" fill="white"/>
+                    </svg>
+                    <span class="font-poppins font-bold text-xl text-primary">NEXTURE</span>
+                </div>
+
+                <!-- Login Link -->
+                <div class="flex items-center space-x-4">
+                    <span class="text-text-secondary">Already have an account?</span>
+                    <a href="#" class="text-primary hover:text-primary-700 font-medium transition-colors">Sign In</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Registration Content -->
+    <main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <!-- Registration Progress Indicator -->
+        <div class="mb-8">
+            <div class="flex items-center justify-center space-x-4 mb-4">
+                <div class="flex items-center">
+                    <div id="step1-indicator" class="w-8 h-8 bg-primary text-white rounded-full flex items-center justify-center text-sm font-medium">1</div>
+                    <span class="ml-2 text-sm font-medium text-primary">Choose Role</span>
+                </div>
+                <div class="flex-1 h-1 bg-border mx-4">
+                    <div id="progress-bar" class="h-1 bg-primary rounded transition-all duration-500" style="width: 33%"></div>
+                </div>
+                <div class="flex items-center">
+                    <div id="step2-indicator" class="w-8 h-8 bg-border text-text-tertiary rounded-full flex items-center justify-center text-sm font-medium">2</div>
+                    <span class="ml-2 text-sm text-text-tertiary">Account Info</span>
+                </div>
+                <div class="flex-1 h-1 bg-border mx-4"></div>
+                <div class="flex items-center">
+                    <div id="step3-indicator" class="w-8 h-8 bg-border text-text-tertiary rounded-full flex items-center justify-center text-sm font-medium">3</div>
+                    <span class="ml-2 text-sm text-text-tertiary">Complete</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Registration Form Container -->
+        <div class="max-w-4xl mx-auto">
+            <!-- Step 1: Role Selection -->
+            <div id="step1" class="nexture-card p-8">
+                <div class="text-center mb-8">
+                    <h1 class="font-poppins font-bold text-3xl text-text-primary mb-4">Join the Environmental Movement</h1>
+                    <p class="text-lg text-text-secondary">Choose your role and start making a difference today</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <!-- Student Role -->
+                    <div class="role-card nexture-mission-card p-6 cursor-pointer text-center" data-role="student">
+                        <div class="w-24 h-24 mx-auto mb-4 bg-primary-100 rounded-full flex items-center justify-center">
+                            <svg class="w-12 h-12 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/>
+                            </svg>
+                        </div>
+                        <h3 class="font-poppins font-semibold text-xl text-text-primary mb-2">Student</h3>
+                        <p class="text-text-secondary mb-4">Join missions, grow your ecosystem, and compete with classmates</p>
+                        <ul class="text-sm text-text-secondary space-y-1">
+                            <li>✓ Access to all environmental missions</li>
+                            <li>✓ Personal ecosystem growth tracking</li>
+                            <li>✓ Leaderboards and achievements</li>
+                            <li>✓ Collaborative school projects</li>
+                        </ul>
+                    </div>
+
+                    <!-- Teacher Role -->
+                    <div class="role-card nexture-mission-card p-6 cursor-pointer text-center" data-role="teacher">
+                        <div class="w-24 h-24 mx-auto mb-4 bg-secondary-100 rounded-full flex items-center justify-center">
+                            <svg class="w-12 h-12 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/>
+                            </svg>
+                        </div>
+                        <h3 class="font-poppins font-semibold text-xl text-text-primary mb-2">Teacher</h3>
+                        <p class="text-text-secondary mb-4">Guide students, review missions, and track classroom progress</p>
+                        <ul class="text-sm text-text-secondary space-y-1">
+                            <li>✓ Classroom management dashboard</li>
+                            <li>✓ Mission approval and feedback</li>
+                            <li>✓ Student progress analytics</li>
+                            <li>✓ Custom mission creation</li>
+                        </ul>
+                    </div>
+
+                    <!-- Administrator Role -->
+                    <div class="role-card nexture-mission-card p-6 cursor-pointer text-center" data-role="administrator">
+                        <div class="w-24 h-24 mx-auto mb-4 bg-accent-100 rounded-full flex items-center justify-center">
+                            <svg class="w-12 h-12 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+                            </svg>
+                        </div>
+                        <h3 class="font-poppins font-semibold text-xl text-text-primary mb-2">Administrator</h3>
+                        <p class="text-text-secondary mb-4">Manage school-wide programs and environmental initiatives</p>
+                        <ul class="text-sm text-text-secondary space-y-1">
+                            <li>✓ School-wide analytics</li>
+                            <li>✓ Teacher and student management</li>
+                            <li>✓ Program configuration</li>
+                            <li>✓ Institution reporting</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="text-center mt-8">
+                    <button id="continue-role" class="nexture-btn-primary disabled:bg-gray-300 disabled:cursor-not-allowed" disabled>
+                        Continue to Account Details
+                    </button>
+                </div>
+            </div>
+
+            <!-- Step 2: Account Information -->
+            <div id="step2" class="nexture-card p-8 hidden">
+                <div class="text-center mb-8">
+                    <h2 class="font-poppins font-bold text-2xl text-text-primary mb-2">Account Information</h2>
+                    <p class="text-text-secondary">Tell us about yourself to personalize your experience</p>
+                </div>
+
+                <form id="registration-form" class="max-w-2xl mx-auto space-y-6">
+                    <!-- Basic Information -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-sm font-medium text-text-primary mb-2">First Name *</label>
+                            <input type="text" id="first-name" class="nexture-input" placeholder="Enter your first name" required />
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-text-primary mb-2">Last Name *</label>
+                            <input type="text" id="last-name" class="nexture-input" placeholder="Enter your last name" required />
+                        </div>
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-medium text-text-primary mb-2">Email Address *</label>
+                        <input type="email" id="email" class="nexture-input" placeholder="Enter your email address" required />
+                        <p class="text-xs text-text-tertiary mt-1">We'll send you mission updates and achievements</p>
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-medium text-text-primary mb-2">Password *</label>
+                        <input type="password" id="password" class="nexture-input" placeholder="Create a secure password" required />
+                        <div class="mt-2 space-y-1">
+                            <div class="flex items-center text-xs" id="password-length">
+                                <span class="w-2 h-2 rounded-full bg-gray-300 mr-2"></span>
+                                <span class="text-text-tertiary">At least 8 characters</span>
+                            </div>
+                            <div class="flex items-center text-xs" id="password-number">
+                                <span class="w-2 h-2 rounded-full bg-gray-300 mr-2"></span>
+                                <span class="text-text-tertiary">Contains at least one number</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Role-specific fields -->
+                    <div id="role-specific-fields">
+                        <!-- Student Fields -->
+                        <div id="student-fields" class="space-y-6 hidden">
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                <div>
+                                    <label class="block text-sm font-medium text-text-primary mb-2">Grade Level *</label>
+                                    <select class="nexture-input" id="grade-level">
+                                        <option value>Select grade level</option>
+                                        <option value="6">6th Grade</option>
+                                        <option value="7">7th Grade</option>
+                                        <option value="8">8th Grade</option>
+                                        <option value="9">9th Grade</option>
+                                        <option value="10">10th Grade</option>
+                                        <option value="11">11th Grade</option>
+                                        <option value="12">12th Grade</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label class="block text-sm font-medium text-text-primary mb-2">Date of Birth *</label>
+                                    <input type="date" id="birth-date" class="nexture-input" required />
+                                </div>
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-text-primary mb-2">School Name *</label>
+                                <input type="text" id="school-name" class="nexture-input" placeholder="Enter your school name" />
+                            </div>
+                            <div>
+                                <label class="flex items-start space-x-3">
+                                    <input type="checkbox" id="parental-consent" class="mt-1" required />
+                                    <span class="text-sm text-text-secondary">I have parental consent to participate in environmental missions and data collection (required for students under 18)</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- Teacher Fields -->
+                        <div id="teacher-fields" class="space-y-6 hidden">
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                <div>
+                                    <label class="block text-sm font-medium text-text-primary mb-2">Subject Area *</label>
+                                    <select class="nexture-input" id="subject-area">
+                                        <option value>Select primary subject</option>
+                                        <option value="science">Science</option>
+                                        <option value="environmental">Environmental Studies</option>
+                                        <option value="biology">Biology</option>
+                                        <option value="chemistry">Chemistry</option>
+                                        <option value="social-studies">Social Studies</option>
+                                        <option value="other">Other</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label class="block text-sm font-medium text-text-primary mb-2">Years of Experience</label>
+                                    <select class="nexture-input" id="experience">
+                                        <option value>Select experience level</option>
+                                        <option value="0-2">0-2 years</option>
+                                        <option value="3-5">3-5 years</option>
+                                        <option value="6-10">6-10 years</option>
+                                        <option value="10+">10+ years</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-text-primary mb-2">Institution Name *</label>
+                                <input type="text" id="institution-name" class="nexture-input" placeholder="Enter your school or institution name" />
+                            </div>
+                        </div>
+
+                        <!-- Administrator Fields -->
+                        <div id="administrator-fields" class="space-y-6 hidden">
+                            <div>
+                                <label class="block text-sm font-medium text-text-primary mb-2">Position/Title *</label>
+                                <input type="text" id="position" class="nexture-input" placeholder="e.g., Principal, Coordinator, Director" />
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-text-primary mb-2">Institution Name *</label>
+                                <input type="text" id="admin-institution" class="nexture-input" placeholder="Enter your institution name" />
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-text-primary mb-2">Institution Type *</label>
+                                <select class="nexture-input" id="institution-type">
+                                    <option value>Select institution type</option>
+                                    <option value="public-school">Public School</option>
+                                    <option value="private-school">Private School</option>
+                                    <option value="charter-school">Charter School</option>
+                                    <option value="university">University/College</option>
+                                    <option value="non-profit">Non-profit Organization</option>
+                                    <option value="government">Government Agency</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Avatar Selection -->
+                    <div>
+                        <label class="block text-sm font-medium text-text-primary mb-2">Choose Your Avatar</label>
+                        <div class="grid grid-cols-4 md:grid-cols-6 gap-3">
+                            <div class="avatar-option w-16 h-16 rounded-full cursor-pointer border-2 border-transparent hover:border-primary transition-colors" data-avatar="1">
+                                <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=100&auto=format&fit=crop" alt="Avatar 1" class="w-full h-full rounded-full object-cover" />
+                            </div>
+                            <div class="avatar-option w-16 h-16 rounded-full cursor-pointer border-2 border-transparent hover:border-primary transition-colors" data-avatar="2">
+                                <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?q=80&w=100&auto=format&fit=crop" alt="Avatar 2" class="w-full h-full rounded-full object-cover" />
+                            </div>
+                            <div class="avatar-option w-16 h-16 rounded-full cursor-pointer border-2 border-transparent hover:border-primary transition-colors" data-avatar="3">
+                                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=100&auto=format&fit=crop" alt="Avatar 3" class="w-full h-full rounded-full object-cover" />
+                            </div>
+                            <div class="avatar-option w-16 h-16 rounded-full cursor-pointer border-2 border-transparent hover:border-primary transition-colors" data-avatar="4">
+                                <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=100&auto=format&fit=crop" alt="Avatar 4" class="w-full h-full rounded-full object-cover" />
+                            </div>
+                            <div class="avatar-option w-16 h-16 rounded-full cursor-pointer border-2 border-transparent hover:border-primary transition-colors" data-avatar="5">
+                                <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=100&auto=format&fit=crop" alt="Avatar 5" class="w-full h-full rounded-full object-cover" />
+                            </div>
+                            <div class="avatar-option w-16 h-16 rounded-full cursor-pointer border-2 border-transparent hover:border-primary transition-colors" data-avatar="6">
+                                <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=100&auto=format&fit=crop" alt="Avatar 6" class="w-full h-full rounded-full object-cover" />
+                            </div>
+                        </div>
+                    </div>
+                </form>
+
+                <div class="flex justify-between mt-8">
+                    <button id="back-to-role" class="px-6 py-3 border border-border rounded-lg text-text-secondary hover:bg-surface-secondary transition-colors">
+                        Back
+                    </button>
+                    <button id="create-account" class="nexture-btn-primary disabled:bg-gray-300 disabled:cursor-not-allowed">
+                        Create Account
+                    </button>
+                </div>
+            </div>
+
+            <!-- Step 3: Success -->
+            <div id="step3" class="nexture-card p-8 text-center hidden">
+                <div class="w-20 h-20 bg-success rounded-full flex items-center justify-center mx-auto mb-6">
+                    <svg class="w-10 h-10 text-white" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                    </svg>
+                </div>
+                
+                <h2 class="font-poppins font-bold text-2xl text-text-primary mb-4">Welcome to NEXTURE!</h2>
+                <p class="text-lg text-text-secondary mb-6">Your account has been created successfully. Let's start your environmental journey!</p>
+                
+                <div id="success-message" class="bg-primary-50 border border-primary-200 rounded-lg p-6 mb-6">
+                    <h3 class="font-semibold text-text-primary mb-2">Next Steps:</h3>
+                    <ul class="text-left text-text-secondary space-y-2">
+                        <li>✓ Check your email for verification link</li>
+                        <li>✓ Complete your profile setup</li>
+                        <li id="student-next" class="hidden">✓ Start your first environmental mission</li>
+                        <li id="teacher-next" class="hidden">✓ Set up your first classroom</li>
+                        <li id="admin-next" class="hidden">✓ Configure your institution settings</li>
+                    </ul>
+                </div>
+
+                <div class="space-y-4">
+                    <button id="get-started" class="nexture-btn-primary w-full">
+                        Get Started
+                    </button>
+                    <a href="homepage.html" class="block text-primary hover:text-primary-700 transition-colors">Return to Homepage</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Environmental Background Elements -->
+    <div class="fixed inset-0 -z-10 overflow-hidden pointer-events-none">
+        <div class="absolute top-20 left-10 w-32 h-32 bg-primary-100 rounded-full opacity-20"></div>
+        <div class="absolute top-40 right-20 w-24 h-24 bg-secondary-100 rounded-full opacity-30"></div>
+        <div class="absolute bottom-20 left-1/4 w-40 h-40 bg-accent-100 rounded-full opacity-15"></div>
+        <div class="absolute bottom-40 right-10 w-20 h-20 bg-primary-200 rounded-full opacity-25"></div>
+    </div>
+
+    <script>
+        let selectedRole = null;
+        let selectedAvatar = null;
+        let currentStep = 1;
+
+        // Role selection functionality
+        document.querySelectorAll('.role-card').forEach(card => {
+            card.addEventListener('click', function() {
+                // Remove previous selection
+                document.querySelectorAll('.role-card').forEach(c => c.classList.remove('ring-2', 'ring-primary'));
+                
+                // Add selection to clicked card
+                this.classList.add('ring-2', 'ring-primary');
+                selectedRole = this.dataset.role;
+                
+                // Enable continue button
+                document.getElementById('continue-role').disabled = false;
+            });
+        });
+
+        // Avatar selection
+        document.querySelectorAll('.avatar-option').forEach(avatar => {
+            avatar.addEventListener('click', function() {
+                document.querySelectorAll('.avatar-option').forEach(a => a.classList.remove('border-primary'));
+                this.classList.add('border-primary');
+                selectedAvatar = this.dataset.avatar;
+            });
+        });
+
+        // Password validation
+        document.getElementById('password').addEventListener('input', function() {
+            const password = this.value;
+            
+            // Length check
+            const lengthEl = document.getElementById('password-length');
+            const lengthIndicator = lengthEl.querySelector('.w-2');
+            const lengthText = lengthEl.querySelector('span:last-child');
+            
+            if (password.length >= 8) {
+                lengthIndicator.classList.remove('bg-gray-300');
+                lengthIndicator.classList.add('bg-success');
+                lengthText.classList.remove('text-text-tertiary');
+                lengthText.classList.add('text-success');
+            } else {
+                lengthIndicator.classList.remove('bg-success');
+                lengthIndicator.classList.add('bg-gray-300');
+                lengthText.classList.remove('text-success');
+                lengthText.classList.add('text-text-tertiary');
+            }
+            
+            // Number check
+            const numberEl = document.getElementById('password-number');
+            const numberIndicator = numberEl.querySelector('.w-2');
+            const numberText = numberEl.querySelector('span:last-child');
+            
+            if (/\d/.test(password)) {
+                numberIndicator.classList.remove('bg-gray-300');
+                numberIndicator.classList.add('bg-success');
+                numberText.classList.remove('text-text-tertiary');
+                numberText.classList.add('text-success');
+            } else {
+                numberIndicator.classList.remove('bg-success');
+                numberIndicator.classList.add('bg-gray-300');
+                numberText.classList.remove('text-success');
+                numberText.classList.add('text-text-tertiary');
+            }
+        });
+
+        // Step navigation
+        document.getElementById('continue-role').addEventListener('click', function() {
+            if (selectedRole) {
+                showStep(2);
+                showRoleSpecificFields(selectedRole);
+            }
+        });
+
+        document.getElementById('back-to-role').addEventListener('click', function() {
+            showStep(1);
+        });
+
+        document.getElementById('create-account').addEventListener('click', function(e) {
+            e.preventDefault();
+            
+            // Basic validation
+            const form = document.getElementById('registration-form');
+            if (form.checkValidity()) {
+                showStep(3);
+                showSuccessMessage(selectedRole);
+                
+                // Simulate account creation
+                setTimeout(() => {
+                    // Here you would typically send data to server
+                    console.log('Account created for role:', selectedRole);
+                }, 1000);
+            } else {
+                form.reportValidity();
+            }
+        });
+
+        document.getElementById('get-started').addEventListener('click', function() {
+            // Redirect based on role
+            if (selectedRole === 'student') {
+                window.location.href = 'student_dashboard.html';
+            } else if (selectedRole === 'teacher') {
+                window.location.href = 'teacher_dashboard.html';
+            } else {
+                window.location.href = 'homepage.html';
+            }
+        });
+
+        function showStep(step) {
+            // Hide all steps
+            document.querySelectorAll('[id^="step"]').forEach(el => {
+                if (el.id.includes('step') && el.id.length === 5) {
+                    el.classList.add('hidden');
+                }
+            });
+            
+            // Show current step
+            document.getElementById(`step${step}`).classList.remove('hidden');
+            
+            // Update progress indicators
+            updateProgressIndicators(step);
+            currentStep = step;
+        }
+
+        function updateProgressIndicators(step) {
+            const indicators = ['step1-indicator', 'step2-indicator', 'step3-indicator'];
+            const labels = ['Choose Role', 'Account Info', 'Complete'];
+            
+            indicators.forEach((id, index) => {
+                const indicator = document.getElementById(id);
+                const stepNumber = index + 1;
+                
+                if (stepNumber < step) {
+                    // Completed step
+                    indicator.className = 'w-8 h-8 bg-success text-white rounded-full flex items-center justify-center text-sm font-medium';
+                    indicator.innerHTML = '✓';
+                } else if (stepNumber === step) {
+                    // Current step
+                    indicator.className = 'w-8 h-8 bg-primary text-white rounded-full flex items-center justify-center text-sm font-medium';
+                    indicator.innerHTML = stepNumber;
+                } else {
+                    // Future step
+                    indicator.className = 'w-8 h-8 bg-border text-text-tertiary rounded-full flex items-center justify-center text-sm font-medium';
+                    indicator.innerHTML = stepNumber;
+                }
+            });
+            
+            // Update progress bar
+            const progressBar = document.getElementById('progress-bar');
+            progressBar.style.width = `${(step - 1) * 50 + 33}%`;
+        }
+
+        function showRoleSpecificFields(role) {
+            // Hide all role-specific fields
+            document.querySelectorAll('[id$="-fields"]').forEach(el => el.classList.add('hidden'));
+            
+            // Show relevant fields
+            document.getElementById(`${role}-fields`).classList.remove('hidden');
+        }
+
+        function showSuccessMessage(role) {
+            // Hide all role-specific success messages
+            document.querySelectorAll('[id$="-next"]').forEach(el => el.classList.add('hidden'));
+            
+            // Show relevant success message
+            document.getElementById(`${role}-next`).classList.remove('hidden');
+        }
+
+        // Email validation
+        document.getElementById('email').addEventListener('blur', function() {
+            const email = this.value;
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            
+            if (email && !emailRegex.test(email)) {
+                this.classList.add('border-error');
+                this.classList.remove('border-border');
+            } else {
+                this.classList.remove('border-error');
+                this.classList.add('border-border');
+            }
+        });
+
+        // Form validation on input
+        document.getElementById('registration-form').addEventListener('input', function() {
+            const requiredFields = this.querySelectorAll('[required]');
+            let allValid = true;
+            
+            requiredFields.forEach(field => {
+                if (!field.value.trim()) {
+                    allValid = false;
+                }
+            });
+            
+            document.getElementById('create-account').disabled = !allValid;
+        });
+
+        // Animate cards on load
+        document.addEventListener('DOMContentLoaded', function() {
+            const cards = document.querySelectorAll('.role-card');
+            cards.forEach((card, index) => {
+                setTimeout(() => {
+                    card.style.opacity = '0';
+                    card.style.transform = 'translateY(20px)';
+                    card.style.transition = 'all 0.5s ease-out';
+                    
+                    setTimeout(() => {
+                        card.style.opacity = '1';
+                        card.style.transform = 'translateY(0)';
+                    }, 100);
+                }, index * 100);
+            });
+        });
+    </script>
+<script id="dhws-dataInjector" src="../public/dhws-data-injector.js"></script>
+</body>
+</html>
